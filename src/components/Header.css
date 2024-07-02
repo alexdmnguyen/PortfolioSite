@@ -1,0 +1,84 @@
+/* components/Header.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 100;
+}
+
+@media (max-width: 700px) {
+  .header {
+    visibility: hidden;
+  }
+}
+
+.header-container {
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  
+  transition: background-color 0.3s ease; /* Add smooth transition effect */
+  transition: 0.5s;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo, .logo-header {
+  width: 50px; /* Adjust the size of your logo */
+  height: auto;
+  margin-right: 1rem; /* Adjust margin as needed */
+}
+
+.logo-header {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-left: 2rem;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+/* Add the following style for the scrolled state */
+.header-container.scrolled {
+  border-radius: 40px;
+  background: rgba(75, 0, 130, 0.9); /* Adjust the color and opacity as needed */
+  backdrop-filter: blur(3px);
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-left: 2em;
+  padding-right: 2em;
+}

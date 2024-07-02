@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css or your global styles */
+body {
+  background-color: var(--bg-color);
+  /* background-color: rgb(204, 203, 203); */
+  color: #fff; /* Set the text color to a suitable contrast color */
+}
+

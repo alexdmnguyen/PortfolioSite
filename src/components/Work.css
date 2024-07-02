@@ -1,0 +1,27 @@
+/* components/Work.css */
+.work {
+    position: relative;
+    display: inline-block;
+    margin: 2rem 0;
+    width: 100%;
+  }
+  
+  .still-image {
+    width: 100%;
+    max-width: 600px;
+    opacity: 50%;
+  }
+  
+  .gif .gif-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 600px;
+    display: none;
+  }
+  
+  .gif:hover .gif-image {
+    display: block;
+  }
+  
