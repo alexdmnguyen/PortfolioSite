@@ -35,7 +35,7 @@ body {
   margin-right: 4rem;
   
   transition: background-color 0.3s ease; /* Add smooth transition effect */
-  transition: 0.5s;
+  transition: 0.6s ease;
 }
 
 .logo-container {
@@ -59,26 +59,46 @@ body {
   align-items: center;
 }
 
-.navbar a {
-  font-size: 1.2rem;
-  color: var(--text-color);
-  margin-left: 2rem;
-  text-decoration: none;
-  transition: 0.5s;
+.nav-item {
+  margin-left: 5px; /* Spacing between nav items */
+  padding: 20px; /* Add padding to create a hoverable area */
+  border-radius: 8px; /* Optional for rounded corners */
+  transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
-.navbar a:hover {
+.nav-item div {
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.nav-item:hover div {
   color: var(--main-color);
+}
+
+.nav-item:hover {
+  /* background-color: rgba(255, 255, 255, 0.1);  */
+}
+
+.nav-item a {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover a {
+  color: var(--main-color); /* Change text color on hover */
 }
 
 /* Add the following style for the scrolled state */
 .header-container.scrolled {
   border-radius: 40px;
-  background: rgba(75, 0, 130, 0.9); /* Adjust the color and opacity as needed */
-  backdrop-filter: blur(3px);
+  /* background: rgba(75, 0, 130, 0.9); */
+  backdrop-filter: blur(6px);
   margin-left: 15%;
   margin-right: 15%;
   padding-left: 2em;
   padding-right: 2em;
+  border: 1px solid white;
 }

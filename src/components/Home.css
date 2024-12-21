@@ -60,7 +60,7 @@
   display: inline-block;
   align-items: center;
   margin-right: 2rem;
-  /* text-align: center; */
+  text-align: center;
 }
 
 .image-container {
@@ -84,12 +84,26 @@
   width: auto\9;
 }
 
+.video {
+  width: 500px;
+  height: 300px;
+}
+
 @keyframes moveUpDown {
   from {
     transform: translateY(20px);
   }
   to {
     transform: translateY(-20px); /* Adjust the distance of movement as needed */
+  }
+}
+
+@keyframes moveUpDownSmall {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px); /* Adjust the distance of movement as needed */
   }
 }
 
@@ -107,16 +121,19 @@
   font-size: 1.2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  /* text-align: left; */
 }
 
 .left-text-container h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  text-align: center;
 }
 
 .left-text-container p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 
@@ -130,7 +147,14 @@
   font-size: 1.4rem;
   transition: 0.3s;
   cursor: pointer;
+  text-align: center;
   /* box-shadow: 13px -8px 10px -5px #a188b0; */
+}
+
+.btn {
+  padding: .75em 1em .75em;
+  font-size: 1.25rem;
+  border-radius: 10px;
 }
 
 .btn:hover, .footer-btn:hover {
@@ -139,13 +163,13 @@
 
 .header-text {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   text-decoration: underline #4b0082;
 }
 
 .projects {
   text-align: center;
-  padding-top: 5%;
+  padding-top: 8rem;
 }
 
 .projects h1 {
@@ -223,7 +247,7 @@
   flex-grow: 1;
   /* height: auto;
   width: auto\9; */
-  border-radius: 20px;
+  /* border-radius: 20px; */
   justify-content: center;
   align-items: center;
 }
@@ -247,7 +271,7 @@
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .gif-hover {
@@ -284,7 +308,7 @@
 
 .overlay-text {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   right: inherit;
   transform: translate(-50%, -50%);
@@ -471,6 +495,11 @@ ul {
   font-size: 1.2rem;
 }
 
+.spinify-logo {
+  margin-top: -200px;
+  margin-bottom: -200px;
+}
+
 .socials-footer {
   display: flex;
   justify-content: center;
@@ -586,6 +615,7 @@ body.no-scroll {
 @media (max-width:700px) {
   .text-container h1 {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .text-container p {
@@ -593,6 +623,7 @@ body.no-scroll {
     margin-top: 1rem;
     padding-left: 5%;
     padding-right: 5%;
+    text-align: center;
   }
 
   .btn {
@@ -643,6 +674,7 @@ body.no-scroll {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.4rem;
+    text-align: center;
   }
 
   .project-gif {
@@ -661,4 +693,10 @@ body.no-scroll {
   .overlay-text {
     font-size: 0.75rem;
   }
+
+  .image-container {
+    animation: moveUpDownSlow 3s infinite alternate;
+    padding-bottom: 1.5rem;
+  }
+  
 }

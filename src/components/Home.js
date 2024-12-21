@@ -4,64 +4,72 @@ import './Home.css';
 import Work from './Work';
 
 const Home = () => {
-  const resumeFileUrl = "/images/alex-nguyen-resume.pdf"; // Replace with the actual path to your resume file
+  const resumeFileUrl = "/images/Resume-AlexNguyen.pdf";
 
   const openResumeInNewTab = () => {
     window.open(resumeFileUrl, '_blank');
   };
 
-  useEffect(() => {
-    const video = document.getElementById('background-video');
-
-    // Fade out the video when it ends
-    video.addEventListener('ended', fadeOutVideo);
-
-    // Disable scrolling when the video starts playing
-    showVideoOverlay();
-
-    return () => {
-      video.removeEventListener('ended', fadeOutVideo);
+  {/*  
+    
+    useEffect(() => {
+      const video = document.getElementById('background-video');
+  
+      // Fade out the video when it ends
+      video.addEventListener('ended', fadeOutVideo);
+  
+      // Disable scrolling when the video starts playing
+      showVideoOverlay();
+  
+      return () => {
+        video.removeEventListener('ended', fadeOutVideo);
+      };
+    }, []);
+  
+    const fadeOutVideo = () => {
+      const video = document.getElementById('background-video');
+      const overlay = document.getElementById('video-overlay');
+  
+      overlay.classList.add('fade-out');
+  
+      setTimeout(() => {
+        video.pause(); // Pause the video
+      }, 1000); // Adjust the timeout to match the duration of the transition
+  
+      // Remove the video overlay from the DOM
+      overlay.parentNode.removeChild(overlay);
+  
+      // Re-enable scrolling and interaction
+      hideVideoOverlay();
     };
-  }, []);
+  
+    const showVideoOverlay = () => {
+      const body = document.querySelector('body');
+      body.classList.add('no-scroll'); // Add class to disable scrolling
+      body.style.pointerEvents = 'none'; // Disable pointer events on the body
+    };
+  
+    const hideVideoOverlay = () => {
+      const body = document.querySelector('body');
+      body.classList.remove('no-scroll'); // Remove class to enable scrolling
+      body.style.pointerEvents = 'auto'; // Re-enable pointer events on the body
+    };
+    
+    */}
 
-  const fadeOutVideo = () => {
-    const video = document.getElementById('background-video');
-    const overlay = document.getElementById('video-overlay');
 
-    overlay.classList.add('fade-out');
-
-    setTimeout(() => {
-      video.pause(); // Pause the video
-    }, 1000); // Adjust the timeout to match the duration of the transition
-
-    // Remove the video overlay from the DOM
-    overlay.parentNode.removeChild(overlay);
-
-    // Re-enable scrolling and interaction
-    hideVideoOverlay();
-  };
-
-  const showVideoOverlay = () => {
-    const body = document.querySelector('body');
-    body.classList.add('no-scroll'); // Add class to disable scrolling
-    body.style.pointerEvents = 'none'; // Disable pointer events on the body
-  };
-
-  const hideVideoOverlay = () => {
-    const body = document.querySelector('body');
-    body.classList.remove('no-scroll'); // Remove class to enable scrolling
-    body.style.pointerEvents = 'auto'; // Re-enable pointer events on the body
-  };
 
   return (
     <div>
-      {/* Video Overlay */}
-      <div id="video-overlay">
-        <video id="background-video" autoPlay muted>
-          <source src="/images/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      {/* 
+        <div id="video-overlay">
+          <video id="background-video" autoPlay muted>
+            <source src="/images/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        */}
+
 
       <div className="content">
         {/* Introduction Section */}
@@ -71,11 +79,11 @@ const Home = () => {
               <img src="/images/alexcircle.png" alt="Alex Nguyen" className="profile-image" />
             </div>
             <div className="text-container">
-              <h1>Hi. I'm Alex Nguyen.</h1>
+              <h1>Hi, I'm Alex Nguyen.</h1>
               <p>Software Engineer</p>
-              <button onClick={openResumeInNewTab} className="btn">
-                Resume
-              </button>
+              <Link onClick={openResumeInNewTab} className="btn">
+                <strong>Resume</strong>
+              </Link>
             </div>
           </div>
         </section>
@@ -84,6 +92,7 @@ const Home = () => {
           <div className="home-content">
             <div className="left-text-container">
               <h1 className="header-text">~ About ~</h1>
+              
               <p>Thank you for stopping by. I hope you enjoy your visit.</p>
             </div>
             <div className="text-container">
@@ -105,6 +114,82 @@ const Home = () => {
   
           {/* Project Grid */}
           <div className="whole-project-grid">
+            <div className="project-grid">
+  
+              <div className="project-box">
+                <img src="/images/spinify-image.png" alt="Project 1" />
+              </div>
+  
+              <div className="gif-box">
+                <ul>
+                  <li>
+                    <img src="/images/spinify-logo.png" alt="Project 2" className="spinify-logo" />
+                  </li>
+                  <li>
+                    <div className="gif-box">
+                      <ul className="project-overlay">
+                        <li className="overlay-text">
+                          <p>
+                            Spinify is a mock e-commerce site built with Python, Django, and the 
+                            Spotify API. It displays users' top songs and albums as vinyl records and 
+                            includes features like a cart, checkout, and order history. The app is fully
+                             mobile-friendly for a seamless experience across devices.
+ 
+                          </p>
+
+                          {/* 
+                            <div className="overlay-buttons">
+                              <a href="link-to-button-1" target="_blank" rel="noopener noreferrer">GitHub</a>
+                              <a href="link-to-button-2" target="_blank" rel="noopener noreferrer">Demo</a>
+                            </div>
+                            */}
+
+                        </li>
+                      </ul>
+                      <video width="500" height="300" autoPlay loop muted controls className="video">
+                        <source src="/images/spinify-video.mp4" type="video/mp4" className="project-gif"/>
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div className="project-description">
+              <h1>- Technologies Used -</h1>
+  
+              <div className="tech-box" id="box1">
+                <img src="/images/HTML.png" alt="HTML Icon"/>
+                <p>HTML</p>
+              </div>
+  
+              <div className="tech-box" id="box2">
+                <img src="/images/CSS.png" alt="CSS Icon"/>
+                <p>CSS</p>
+              </div>
+  
+              <div className="tech-box" id="box3">
+                <img src="/images/JavaScript.png" alt="JavaScript Icon"/>
+                <p>JavaScript</p>
+              </div>
+  
+              <div className="tech-box" id="box4">
+                <img src="/images/React.png" alt="React Icon"/>
+                <p>React</p>
+              </div>
+
+              <div className="tech-box" id="box5">
+                <img src="/images/python.png" alt="Python Icon"/>
+                <p>Python</p>
+              </div>
+            </div>
+  
+          </div>
+
+
+
+          <div className="final-project-grid">
             <div className="project-grid">
   
               <div className="project-box">
@@ -164,77 +249,83 @@ const Home = () => {
   
           </div>
   
-  
-          <div className="final-project-grid">
-            <div className="project-grid">
-  
-              <div className="project-box">
-                <img src="/images/onlycapys_poster.png" alt="Project 1" />
+          {/* 
+            
+            <div className="final-project-grid">
+              <div className="project-grid">
+    
+                <div className="project-box">
+                  <img src="/images/onlycapys_poster.png" alt="Project 1" />
+                </div>
+    
+                <div className="gif-box">
+                  <ul>
+                    <li>
+                      <img src="/images/onlycapys_logo.png" alt="Project 2" className="project-logo" />
+                    </li>
+                    <li>
+                      <div className="gif-box">
+                        <ul className="project-overlay">
+                          <li className="overlay-text">
+                            <p>Your Project Description Here</p>
+                            <div className="overlay-buttons">
+                              <a href="link-to-button-1" target="_blank" rel="noopener noreferrer">GitHub</a>
+                              <a href="link-to-button-2" target="_blank" rel="noopener noreferrer">Demo</a>
+                            </div>
+                          </li>
+                        </ul>
+                        <img src="/images/manifestival.gif" alt="Project 1 Gif" className="project-gif" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
-  
-              <div className="gif-box">
-                <ul>
-                  <li>
-                    <img src="/images/onlycapys_logo.png" alt="Project 2" className="project-logo" />
-                  </li>
-                  <li>
-                    <div className="gif-box">
-                      <ul className="project-overlay">
-                        <li className="overlay-text">
-                          <p>Your Project Description Here</p>
-                          <div className="overlay-buttons">
-                            <a href="link-to-button-1" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            <a href="link-to-button-2" target="_blank" rel="noopener noreferrer">Demo</a>
-                          </div>
-                        </li>
-                      </ul>
-                      <img src="/images/manifestival.gif" alt="Project 1 Gif" className="project-gif" />
-                    </div>
-                  </li>
-                </ul>
+    
+              <div className="project-description">
+                <h1>- Technologies Used -</h1>
+    
+                <div className="tech-box" id="box1">
+                  <img src="/images/HTML.png" alt="HTML Icon"/>
+                  <p>HTML</p>
+                </div>
+    
+                <div className="tech-box" id="box2">
+                  <img src="/images/CSS.png" alt="CSS Icon"/>
+                  <p>CSS</p>
+                </div>
+    
+                <div className="tech-box" id="box3">
+                  <img src="/images/JavaScript.png" alt="JavaScript Icon"/>
+                  <p>JavaScript</p>
+                </div>
+    
+                <div className="tech-box" id="box4">
+                  <img src="/images/React.png" alt="React Icon"/>
+                  <p>React</p>
+                </div>
+    
+                <div className="tech-box" id="box5">
+                  <img src="/images/vue.png" alt="Vue Icon"/>
+                  <p>Vue</p>
+                </div>
+    
+                <div className="tech-box" id="box6">
+                  <img src="/images/bulma.png" alt="Bulma Icon"/>
+                  <p>Bulma</p>
+                </div>
+    
+                <div className="tech-box" id="box7">
+                  <img src="/images/py4web.png" alt="py4web Icon"/>
+                  <p>py4web</p>
+                </div>
               </div>
+    
             </div>
+            
+            
+            */}
   
-            <div className="project-description">
-              <h1>- Technologies Used -</h1>
-  
-              <div className="tech-box" id="box1">
-                <img src="/images/HTML.png" alt="HTML Icon"/>
-                <p>HTML</p>
-              </div>
-  
-              <div className="tech-box" id="box2">
-                <img src="/images/CSS.png" alt="CSS Icon"/>
-                <p>CSS</p>
-              </div>
-  
-              <div className="tech-box" id="box3">
-                <img src="/images/JavaScript.png" alt="JavaScript Icon"/>
-                <p>JavaScript</p>
-              </div>
-  
-              <div className="tech-box" id="box4">
-                <img src="/images/React.png" alt="React Icon"/>
-                <p>React</p>
-              </div>
-  
-              <div className="tech-box" id="box5">
-                <img src="/images/vue.png" alt="Vue Icon"/>
-                <p>Vue</p>
-              </div>
-  
-              <div className="tech-box" id="box6">
-                <img src="/images/bulma.png" alt="Bulma Icon"/>
-                <p>Bulma</p>
-              </div>
-  
-              <div className="tech-box" id="box7">
-                <img src="/images/py4web.png" alt="py4web Icon"/>
-                <p>py4web</p>
-              </div>
-            </div>
-  
-          </div>
+
   
           {/* <div className="final-project-grid">
             <div className="project-grid">

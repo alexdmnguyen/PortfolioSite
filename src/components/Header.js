@@ -28,25 +28,22 @@ const Header = () => {
       <div className={`header-container ${scrolling ? 'scrolled' : ''}`}>
         <div className="logo-container">
           <Link to="home" smooth={true} duration={500}>
-            {/* Specify the section ID in the "to" prop */}
             <img src="/images/alexcircle.png" alt="Logo" className="logo-header" />
           </Link>
         </div>
 
         <nav className="navbar">
-          <Link to="about" smooth={true} duration={500}>
-            {/* Specify the section ID in the "to" prop */}
-            About
+          <Link to="about" smooth={true} duration={500} className="nav-item">
+            <div><strong>About</strong></div>
           </Link>
-          <Link to="projects" smooth={true} duration={500}>
-            {/* Specify the section ID in the "to" prop */}
-            Projects
+          <Link to="projects" smooth={true} duration={500} className="nav-item">
+            <div><strong>Projects</strong></div>
           </Link>
-          <Link to="footer" smooth={true} duration={500}>
-            {/* Specify the section ID in the "to" prop */}
-            Contact
+          <Link to="footer" smooth={true} duration={500} className="nav-item">
+            <div><strong>Contact</strong></div>
           </Link>
         </nav>
+
       </div>
     </header>
   );
