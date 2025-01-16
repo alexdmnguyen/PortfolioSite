@@ -201,7 +201,7 @@ const Home = () => {
             <div className="project-grid">
   
               <div className="project-box">
-                <img src="/images/nba-comparison-image.png" alt="Project 2" />
+                <img src="/images/nba-comparison-image.PNG" alt="Project 2" />
               </div>
   
               <div className="gif-box">
