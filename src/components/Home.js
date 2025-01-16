@@ -295,10 +295,14 @@ const Home = () => {
                             festival posters and showcase users' top artists over specific time frames,
                             along with detailed lists of their top songs and artists. 
                           </p>
-                          <div className="overlay-buttons">
-                            <a href="link-to-button-1" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            <a href="link-to-button-2" target="_blank" rel="noopener noreferrer">Demo</a>
-                          </div>
+
+                          {/*
+                            <div className="overlay-buttons">
+                              <a href="link-to-button-1" target="_blank" rel="noopener noreferrer">GitHub</a>
+                              <a href="link-to-button-2" target="_blank" rel="noopener noreferrer">Demo</a>
+                            </div>
+                            */}
+
                         </li>
                       </ul>
                       <img src="/images/manifestival.gif" alt="Project 1 Gif" className="project-gif" />
