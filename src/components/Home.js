@@ -137,12 +137,12 @@ const Home = () => {
  
                           </p>
 
-                          {/* 
-                            <div className="overlay-buttons">
-                              <a href="link-to-button-1" target="_blank" rel="noopener noreferrer">GitHub</a>
-                              <a href="link-to-button-2" target="_blank" rel="noopener noreferrer">Demo</a>
-                            </div>
-                            */}
+                          {/*
+                          <div className="overlay-buttons">
+                            <a href="https://github.com/alexdmnguyen/spinify" target="_blank" rel="noopener noreferrer">GitHub</a>
+                          </div>
+                          */}
+                            
 
                         </li>
                       </ul>
@@ -183,6 +183,91 @@ const Home = () => {
                 <img src="/images/python.png" alt="Python Icon"/>
                 <p>Python</p>
               </div>
+
+              <div className="tech-box" id="box5">
+                <img src="/images/django-logo.png" alt="Django Icon"/>
+                <p>Django</p>
+              </div>
+              
+            </div>
+
+            <div className="overlay-buttons">
+              <a href="https://github.com/alexdmnguyen/spinify" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+  
+          </div>
+
+          <div className="whole-project-grid">
+            <div className="project-grid">
+  
+              <div className="project-box">
+                <img src="/images/nba-comparison-image.png" alt="Project 2" />
+              </div>
+  
+              <div className="gif-box">
+                <ul>
+                  <li>
+                    <h1 class="NBA-title">
+                      NBA Comparison Tool
+                    </h1>
+                  </li>
+                  <li>
+                    <div className="gif-box">
+                      <ul className="project-overlay">
+                        <li className="overlay-text">
+                          <p>
+                          A Python-based web application, the NBA Comparison Tool uses web scraping to fetch and compare current NBA players' stats. Leveraging data from Basketball Reference, the app allows users to search for and compare any two players who have played in the current NBA season. 
+ 
+                          </p>
+
+                          {/*
+                          <div className="overlay-buttons">
+                            <a href="https://github.com/alexdmnguyen/nba-comparison" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://nba-comparison.onrender.com/" target="_blank" rel="noopener noreferrer">Demo</a>
+                          </div>
+                          */}
+                            
+
+                        </li>
+                      </ul>
+                      <video width="500" height="300" autoPlay loop muted controls className="video">
+                        <source src="/images/nba-comparison-video.mp4" type="video/mp4" className="project-gif"/>
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div className="project-description">
+              <h1>- Technologies Used -</h1>
+  
+              <div className="tech-box" id="box1">
+                <img src="/images/HTML.png" alt="HTML Icon"/>
+                <p>HTML</p>
+              </div>
+  
+              <div className="tech-box" id="box2">
+                <img src="/images/CSS.png" alt="CSS Icon"/>
+                <p>CSS</p>
+              </div>
+  
+              <div className="tech-box" id="box3">
+                <img src="/images/JavaScript.png" alt="JavaScript Icon"/>
+                <p>JavaScript</p>
+              </div>
+
+              <div className="tech-box" id="box5">
+                <img src="/images/python.png" alt="Python Icon"/>
+                <p>Python</p>
+              </div>
+
+            </div>
+
+            <div className="overlay-buttons">
+              <a href="https://github.com/alexdmnguyen/nba-comparison" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://nba-comparison.onrender.com/" target="_blank" rel="noopener noreferrer">Demo</a>
             </div>
   
           </div>
@@ -248,6 +333,7 @@ const Home = () => {
             </div>
   
           </div>
+
   
           {/* 
             
@@ -327,12 +413,13 @@ const Home = () => {
   
 
   
-          {/* <div className="final-project-grid">
+          {/*           <div className="final-project-grid">
+            <p>https://silmist.itch.io/future-in-flames</p>
             <div className="project-grid">
   
               <div className="project-box">
                 <img src="/images/future-in-flames.jpg" alt="Project 1" />
-              </div>
+              </div> 
   
               <div className="gif-box">
                 <ul>
