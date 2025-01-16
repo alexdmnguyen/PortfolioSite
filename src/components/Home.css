@@ -169,7 +169,7 @@
 
 .projects {
   text-align: center;
-  padding-top: 8rem;
+  padding-top: 5rem;
 }
 
 .projects h1 {
@@ -379,8 +379,8 @@ ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; /* Allow items to wrap to the next line */
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 1%;
+  padding-bottom: 1.5%;
 }
 
 .tech-box {
@@ -401,8 +401,7 @@ ul {
 }
 
 .tech-box img {
-  width: 60px; /* Adjust as needed */
-  height: 60px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
   margin-top: 10px; /* Adjust as needed */
 }
 
