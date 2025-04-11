@@ -73,18 +73,33 @@ const Home = () => {
 
       <div className="content">
         {/* Introduction Section */}
-        <section className="home" id="home">
-          <div className="home-content">
-            <div className="image-container">
-              <img src="/images/alexcircle.png" alt="Alex Nguyen" className="profile-image" />
+        <section class="home" id="home">
+          <div class="home-content">
+            <div class="image-container">
+              <img src="/images/alexcircle.png" alt="Alex Nguyen" class="profile-image" />
             </div>
-            <div className="text-container">
-              <h1>Hi, I'm Alex Nguyen.</h1>
+            <div class="text-container">
+              <h1 class="name-line">
+                Hi, I'm&nbsp;
+                <span class="name-image-wrapper">
+                  <img src="/images/anguy1.png" class="name-image" />
+                  <img src="/images/anguy2.png" class="name-image" />
+                  <img src="/images/anguy3.png" class="name-image" />
+                  <img src="/images/anguy4.png" class="name-image" />
+                  <img src="/images/anguy5.png" class="name-image" />
+                  <img src="/images/anguy6.png" class="name-image" />
+                  <img src="/images/anguy7.png" class="name-image" />
+                  <img src="/images/anguy8.png" class="name-image" />
+                  <img src="/images/anguy9.png" class="name-image" />
+                  <img src="/images/anguy10.png" class="name-image" />
+                </span>
+              </h1>
               <p>Software Engineer</p>
               <Link onClick={openResumeInNewTab} className="btn">
                 <strong>Resume</strong>
               </Link>
             </div>
+            
           </div>
         </section>
 
@@ -92,8 +107,11 @@ const Home = () => {
           <div className="home-content">
             <div className="left-text-container">
               <h1 className="header-text">~ About ~</h1>
-              
+              <div className="ucsc-logo-wrapper">
+                <img src="/images/ucscLogo.gif" alt="UCSC Logo Animation" className="ucsc-logo" />
+              </div>
               <p>Thank you for stopping by. I hope you enjoy your visit.</p>
+
             </div>
             <div className="text-container">
               <p>I am a recent graduate from the University of California,

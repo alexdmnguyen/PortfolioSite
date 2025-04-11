@@ -464,6 +464,86 @@ ul {
   text-decoration: underline #4b0082;
 }
 
+.text-container h1 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.name-line {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0px;
+}
+
+.name-image-wrapper {
+  position: relative;
+  width: 300px;
+  height: 60px;
+  display: inline-block;
+}
+
+.name-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: auto;
+  opacity: 0;
+  animation: fadeCycle 10s ease-out infinite;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  transform: scale(1);
+  overflow: hidden;
+}
+
+.name-image:nth-child(1)  { animation-delay: 0s; }
+.name-image:nth-child(2)  { animation-delay: 1s; }
+.name-image:nth-child(3)  { animation-delay: 2s; }
+.name-image:nth-child(4)  { animation-delay: 3s; }
+.name-image:nth-child(5)  { animation-delay: 4s; }
+.name-image:nth-child(6)  { animation-delay: 5s; }
+.name-image:nth-child(7)  { animation-delay: 6s; }
+.name-image:nth-child(8)  { animation-delay: 7s; }
+.name-image:nth-child(9)  { animation-delay: 8s; }
+.name-image:nth-child(10) { animation-delay: 9s; }
+
+@keyframes fadeCycle {
+  0%     { opacity: 0; transform: scale(1); }
+  10%    { opacity: 1; transform: scale(1.08); }
+  20%    { opacity: 0.25; transform: scale(0.6); }
+  30%    { opacity: 0; transform: scale(0); }
+  100%   { opacity: 0; transform: scale(0); }
+}
+
+.ucsc-logo-wrapper {
+  text-align: center;
+}
+
+.ucsc-logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  animation: fadeIn 0.02s ease-out;
+}
+
+/* Optional fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 .footer-text-container p, h2 {
   color: #a188b0;
   font-size: 1.2rem;
