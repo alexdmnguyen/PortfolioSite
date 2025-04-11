@@ -94,7 +94,7 @@ const Home = () => {
                   <img src="/images/anguy10.png" class="name-image" />
                 </span>
               </h1>
-              <p>Software Engineer</p>
+              <p>Software Engineer & Web Developer</p>
               <Link onClick={openResumeInNewTab} className="btn">
                 <strong>Resume</strong>
               </Link>
@@ -114,12 +114,14 @@ const Home = () => {
 
             </div>
             <div className="text-container">
-              <p>I am a recent graduate from the University of California,
-                Santa Cruz, holding a Bachelor of Science degree in Computer Science:
-                Game Design. My passion lies in crafting innovative 
-                web applications and engaging game experiences. Armed with a 
-                strong foundation in computer science, I am dedicated to merging 
-                creativity with technology.</p>
+              <p>I’m a recent graduate from the University of California, Santa Cruz, with a 
+                Bachelor of Science in Computer Science: Game Design. I’m passionate about 
+                crafting innovative web applications and building engaging game experiences 
+                that blend creativity with technology.
+
+                Beyond the screen, I enjoy music, and playing/watching professional esports, basketball, 
+                tennis, pickleball, and baseball. I'm always exploring new ways to 
+                merge my technical skills with creative expression.</p>
             </div>
           </div>
         </section>
@@ -134,14 +136,14 @@ const Home = () => {
           <div className="whole-project-grid">
             <div className="project-grid">
   
-              <div className="project-box">
+              {/* <div className="project-box">
                 <img src="/images/spinify-image.png" alt="Project 1" />
-              </div>
+              </div> */}
   
               <div className="gif-box">
                 <ul>
                   <li>
-                    <img src="/images/spinify-logo.png" alt="Project 2" className="spinify-logo" />
+                    <img src="/images/spinify-logo-new.png" alt="Project 2" className="spinify-logo" />
                   </li>
                   <li>
                     <div className="gif-box">
@@ -218,16 +220,14 @@ const Home = () => {
           <div className="whole-project-grid">
             <div className="project-grid">
   
-              <div className="project-box">
+              {/* <div className="project-box">
                 <img src="/images/nba-comparison-image.PNG" alt="Project 2" />
-              </div>
+              </div> */}
   
               <div className="gif-box">
                 <ul>
                   <li>
-                    <h1 class="NBA-title">
-                      NBA Comparison Tool
-                    </h1>
+                      <img src="/images/nba-comparison-logo.png" alt="Project 2" className="nba-comparison-logo" />
                   </li>
                   <li>
                     <div className="gif-box">
@@ -295,9 +295,9 @@ const Home = () => {
           <div className="final-project-grid">
             <div className="project-grid">
   
-              <div className="project-box">
+              {/* <div className="project-box">
                 <img src="/images/manifestival_poster - Copy.png" alt="Project 1" />
-              </div>
+              </div> */}
   
               <div className="gif-box">
                 <ul>

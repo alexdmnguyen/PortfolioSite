@@ -85,8 +85,8 @@
 }
 
 .video {
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: auto;
 }
 
 @keyframes moveUpDown {
@@ -338,6 +338,7 @@
 }
 
 .overlay-buttons a {
+  font-size: 20px;
   display: inline-block;
   padding: 5px 10px;
   margin: 0 10px;
@@ -366,7 +367,8 @@
 }
 
 p {
-  color: #a188b0;
+  /* color: #a188b0; */
+  color: white;
 }
 
 ul {
@@ -386,7 +388,6 @@ ul {
 
 .tech-box {
   width: 6rem; /* Adjust as needed */
-  height: 6rem; /* Adjust as needed */
   /* background-color: #fff; */
   /* box-shadow: 8px -8px 10px -5px #a188b0; */
   display: flex;
@@ -402,13 +403,13 @@ ul {
 }
 
 .tech-box img {
-  height: 50px; /* Adjust as needed */
+  height: 35px; /* Adjust as needed */
   margin-top: 10px; /* Adjust as needed */
 }
 
 .tech-box p {
   margin: 5px 0;
-  font-size: 14px; /* Adjust as needed */
+  font-size: 12px; /* Adjust as needed */
   font-weight: bold;
   color: white;
 }
@@ -580,11 +581,6 @@ ul {
   font-size: 1.2rem;
 }
 
-.spinify-logo {
-  margin-top: -200px;
-  margin-bottom: -225px;
-}
-
 .socials-footer {
   display: flex;
   justify-content: center;
@@ -665,7 +661,7 @@ body.no-scroll {
   }
 
   .text-container p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .btn {
