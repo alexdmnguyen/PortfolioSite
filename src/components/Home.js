@@ -4,7 +4,7 @@ import './Home.css';
 import Work from './Work';
 
 const Home = () => {
-  const resumeFileUrl = "/images/Resume-AlexNguyen.pdf";
+  const resumeFileUrl = "/images/alexdmnguyenResume.pdf";
 
   const openResumeInNewTab = () => {
     window.open(resumeFileUrl, '_blank');
