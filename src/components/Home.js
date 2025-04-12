@@ -10,53 +10,6 @@ const Home = () => {
     window.open(resumeFileUrl, '_blank');
   };
 
-  {/*  
-    
-    useEffect(() => {
-      const video = document.getElementById('background-video');
-  
-      // Fade out the video when it ends
-      video.addEventListener('ended', fadeOutVideo);
-  
-      // Disable scrolling when the video starts playing
-      showVideoOverlay();
-  
-      return () => {
-        video.removeEventListener('ended', fadeOutVideo);
-      };
-    }, []);
-  
-    const fadeOutVideo = () => {
-      const video = document.getElementById('background-video');
-      const overlay = document.getElementById('video-overlay');
-  
-      overlay.classList.add('fade-out');
-  
-      setTimeout(() => {
-        video.pause(); // Pause the video
-      }, 1000); // Adjust the timeout to match the duration of the transition
-  
-      // Remove the video overlay from the DOM
-      overlay.parentNode.removeChild(overlay);
-  
-      // Re-enable scrolling and interaction
-      hideVideoOverlay();
-    };
-  
-    const showVideoOverlay = () => {
-      const body = document.querySelector('body');
-      body.classList.add('no-scroll'); // Add class to disable scrolling
-      body.style.pointerEvents = 'none'; // Disable pointer events on the body
-    };
-  
-    const hideVideoOverlay = () => {
-      const body = document.querySelector('body');
-      body.classList.remove('no-scroll'); // Remove class to enable scrolling
-      body.style.pointerEvents = 'auto'; // Re-enable pointer events on the body
-    };
-    
-    */}
-
 
 
   return (
@@ -95,7 +48,8 @@ const Home = () => {
                 </span>
               </h1>
               <p>Software Engineer & Web Developer</p>
-              <Link onClick={openResumeInNewTab} className="btn">
+              <Link onClick={openResumeInNewTab} className="btn resume-btn">
+                <img src="/images/resume-white.png" alt="Resume Icon" className="resume-icon" />
                 <strong>Resume</strong>
               </Link>
             </div>
@@ -140,20 +94,89 @@ const Home = () => {
                 <img src="/images/spinify-image.png" alt="Project 1" />
               </div> */}
   
+              <div className="gif-box project-video-text-grid">
+              <ul>
+                <li>
+                  <img src="/images/picklescore-logo-new.png" alt="Project 2" className="spinify-logo" />
+                </li>
+                <li>
+                  <div className="project-video-text-grid">
+                    <div className="phone-frame">
+                      <video autoPlay loop muted controls className="video vertical-video">
+                        <source src="/images/sticklevideo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div className="overlay-text-grid">
+                      <p>
+                      PickleScore is a mobile app built with React Native for tracking pickleball 
+                      games in real time. It features simple score controls, automatic serve 
+                      and side-out logic, and audible score announcements. Users can 
+                      customize team names, game type (singles or doubles), and visual themes. 
+                      The app is fully mobile-optimized and supports both portrait and 
+                      landscape orientations for a smooth, responsive experience on any device.
+                      </p>
+                      <div className="overlay-buttons">
+                        <a href="https://github.com/alexdmnguyen/stickleScore" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://stickle-score.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            </div>
+  
+            <div className="project-description">
+              <h1>- Technologies Used -</h1>
+  
+              <div className="tech-box" id="box1">
+                <img src="/images/reactnative.png" alt="React Native Icon"/>
+                <p>React Native</p>
+              </div>
+  
+              <div className="tech-box" id="box2">
+                <img src="/images/expo.png" alt="Expo Icon"/>
+                <p>Expo</p>
+              </div>
+  
+              <div className="tech-box" id="box3">
+                <img src="/images/JavaScript.png" alt="JavaScript Icon"/>
+                <p>JavaScript</p>
+              </div>
+              
+            </div>
+
+            {/* <div className="overlay-buttons">
+              <a href="https://github.com/alexdmnguyen/stickleScore" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://stickle-score.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+            </div> */}
+  
+          </div>
+
+          <div className="whole-project-grid">
+            <div className="project-grid">
+  
+              {/* <div className="project-box">
+                <img src="/images/spinify-image.png" alt="Project 1" />
+              </div> */}
+  
               <div className="gif-box">
                 <ul>
                   <li>
-                    <img src="/images/spinify-logo-new.png" alt="Project 2" className="spinify-logo" />
+                    <img src="/images/spinify-logo-pink.png" alt="Project 2" className="spinify-logo" />
                   </li>
                   <li>
                     <div className="gif-box">
                       <ul className="project-overlay">
                         <li className="overlay-text">
                           <p>
-                            Spinify is a mock e-commerce site built with Python, Django, and the 
-                            Spotify API. It displays users' top songs and albums as vinyl records and 
-                            includes features like a cart, checkout, and order history. The app is fully
-                             mobile-friendly for a seamless experience across devices.
+                          Spinify is a mock e-commerce site built with Python, Django, and the 
+                          Spotify API. It displays users' top songs and albums as vinyl records 
+                          and includes features like a shopping cart, checkout, and persistent 
+                          order history stored in a database. The app is fully mobile-friendly, 
+                          offering a smooth and responsive experience across all devices.
  
                           </p>
 
@@ -216,6 +239,8 @@ const Home = () => {
             </div>
   
           </div>
+
+
 
           <div className="whole-project-grid">
             <div className="project-grid">
