@@ -105,7 +105,7 @@ const Home = () => {
                       <ul className="project-overlay">
                         <li className="overlay-text">
                           <p>
-                            Sambo News is a full-stack sports news platform built with Next.js for a 
+                            Lockey Sports is a full-stack sports news platform built with Next.js for a 
                             fast, SEO-friendly frontend and a Strapi headless CMS for dynamic content management. 
                             It features filterable article streams for sports and esports, with a fully responsive, 
                             mobile design ensuring a seamless experience on any device.
