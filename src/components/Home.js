@@ -87,6 +87,92 @@ const Home = () => {
           </div>
   
           {/* Project Grid */}
+
+          <div className="whole-project-grid">
+            <div className="project-grid">
+  
+              {/* <div className="project-box">
+                <img src="/images/spinify-image.png" alt="Project 1" />
+              </div> */}
+  
+              <div className="gif-box">
+                <ul>
+                  <li>
+                    <img src="/images/LOCKEY.png" alt="Project 2" className="spinify-logo" />
+                  </li>
+                  <li>
+                    <div className="gif-box">
+                      <ul className="project-overlay">
+                        <li className="overlay-text">
+                          <p>
+                            Sambo News is a full-stack sports news platform built with Next.js for a 
+                            fast, SEO-friendly frontend and a Strapi headless CMS for dynamic content management. 
+                            It features filterable article streams for sports and esports, with a fully responsive, 
+                            mobile design ensuring a seamless experience on any device.
+ 
+                          </p>
+
+                          {/*
+                          <div className="overlay-buttons">
+                            <a href="https://github.com/alexdmnguyen/spinify" target="_blank" rel="noopener noreferrer">GitHub</a>
+                          </div>
+                          */}
+                            
+
+                        </li>
+                      </ul>
+                      <video width="500" height="300" autoPlay loop muted controls className="video">
+                        <source src="/images/sport-blog-vid.mp4" type="video/mp4" className="project-gif"/>
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div className="project-description">
+              <h1>- Technologies Used -</h1>
+  
+              <div className="tech-box" id="box1">
+                <img src="/images/nextjs.png" alt="nextjs Icon"/>
+                <p>Next.js</p>
+              </div>
+  
+              <div className="tech-box" id="box2">
+                <img src="/images/react.png" alt="react Icon"/>
+                <p>React</p>
+              </div>
+  
+              <div className="tech-box" id="box3">
+                <img src="/images/typescript.png" alt="typescript Icon"/>
+                <p>TypeScript</p>
+              </div>
+  
+              <div className="tech-box" id="box4">
+                <img src="/images/strapi.png" alt="strapi Icon"/>
+                <p>Strapi</p>
+              </div>
+
+              <div className="tech-box" id="box5">
+                <img src="/images/postgresql.png" alt="PostgreSQL Icon"/>
+                <p>PostgreSQL</p>
+              </div>
+
+              <div className="tech-box" id="box5">
+                <img src="/images/tailwindcss.png" alt="TailwindCSS Icon"/>
+                <p>Tailwind CSS</p>
+              </div>
+              
+            </div>
+
+            <div className="overlay-buttons">
+              <a href="https://github.com/alexdmnguyen/sportme-blog" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://lockey-news.vercel.app/" target="_blank" rel="noopener noreferrer">Demo In Progress</a>
+            </div>
+  
+          </div>
+          
           <div className="whole-project-grid">
             <div className="project-grid">
   
